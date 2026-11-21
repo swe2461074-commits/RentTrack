@@ -34,3 +34,4 @@ src/
    ├─ pages/  layouts/  components/  fn/  data/  i18n/
 ```
 Өгөгдөл (`js/data/sampleData.js`) нь туршилтын жишээ утга.
+# RentTrack
