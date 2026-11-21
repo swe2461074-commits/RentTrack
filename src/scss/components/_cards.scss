@@ -1,0 +1,70 @@
+.app-hero {
+  background: linear-gradient(135deg, #0f766e 0%, #14958a 60%, #f59e0b 140%);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  margin-bottom: 1.75rem;
+  color: #fff;
+  &-title {
+    color: #fff !important;
+    margin-bottom: 0.75rem !important;
+  }
+  // Hero дотор үндсэн товч teal дэвсгэр дээр ялгарахын тулд accent (amber) өнгөтэй.
+  .button.is-primary {
+    background: var(--rt-accent);
+    border-color: transparent;
+    color: #1f2937;
+    font-weight: 700;
+    &:hover {
+      background: #fbbf24;
+      color: #111827;
+    }
+  }
+  &-text {
+    color: rgba(255, 255, 255, 0.92) !important;
+    max-width: 46rem;
+  }
+}
+.app-stat {
+  border: 1px solid var(--rt-border);
+  box-shadow: none;
+}
+.app-category-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid var(--rt-border);
+  box-shadow: none;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--rt-brand);
+    box-shadow: 0 8px 18px rgba(15, 118, 110, 0.15);
+  }
+  .title,
+  .subtitle {
+    margin-bottom: 0.15rem;
+  }
+}
+.app-step {
+  padding: 1rem 1.25rem;
+  &-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: 0.75rem;
+    border-radius: 50%;
+    background: var(--rt-accent);
+    color: #fff;
+    font-weight: 800;
+  }
+}
+.app-contact-card {
+  max-width: 34rem;
+  border: 1px solid var(--rt-border);
+  box-shadow: none;
+}
+.app-contact-row + .app-contact-row {
+  margin-top: 1rem;
+}

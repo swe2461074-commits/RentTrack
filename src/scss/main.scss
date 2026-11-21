@@ -1,0 +1,25 @@
+// RentTreck - үндсэн stylesheet
+// 1) Bulma  2) брэндийн өнгө (CSS variables)  3) өөрийн component/layout стиль
+@import "../../node_modules/bulma/bulma";
+@import "./components/navbar";
+@import "./components/cards";
+@import "./layouts/pageLayout";
+// Брэндийн өнгө: teal (primary) + amber (accent). Bulma 1.x нь өнгөө HSL variable-аар авдаг.
+:root {
+  --bulma-primary-h: 175deg;
+  --bulma-primary-s: 80%;
+  --bulma-primary-l: 26%;
+  --bulma-link-h: 200deg;
+  --bulma-link-s: 90%;
+  --bulma-link-l: 38%;
+  --bulma-family-primary: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --rt-brand: #0f766e;
+  --rt-accent: #f59e0b;
+  --rt-surface: #f6f8f9;
+  --rt-border: #e3e8ec;
+  --rt-nav-height: 3.75rem;
+}
+body {
+  background: var(--rt-surface);
+  min-height: 100vh;
+}

@@ -1,0 +1,53 @@
+.app-title {
+  position: relative;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.75rem !important;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5rem;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--rt-accent);
+  }
+}
+.app-subtitle {
+  color: #5b6770 !important;
+  margin-bottom: 1.5rem !important;
+}
+.app-section-title {
+  margin: 2rem 0 1rem !important;
+}
+.app-tbl {
+  font-size: 0.92rem;
+  th {
+    white-space: nowrap;
+  }
+}
+.app-filters,
+.app-summary {
+  margin-bottom: 1rem;
+}
+.app-found {
+  margin-bottom: 0.5rem;
+  color: #5b6770;
+}
+@media screen and (max-width: 768px) {
+  .app-hero {
+    padding: 1.75rem 1.25rem;
+  }
+  .app-tbl {
+    font-size: 0.8rem;
+  }
+}
+// Тооцоолуурын "Нийт төлөх дүн" мөр: teal дэвсгэр дээр цагаан текст (унших боломжтой байлгана).
+.app-tbl tr.is-selected {
+  th,
+  td {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+}
